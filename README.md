@@ -1,6 +1,10 @@
 # Updated Application Architecure
-
+![Application Architecture](https://github.com/user-attachments/assets/aa376665-c3d6-418b-b73f-1d017990ec2b)
 # Application and Architecture Explanation
+The API acts as the entry point and splits between the store-front(customers) and store-admin(employees).
+The store-front sends request to the order-service and product-service, while the store-admin communicates with the makeline-service.
+
+
 # Deployment Instructions
 # Table of Microservice Repositories
 | **Service**         | **Repository Link**                       |
