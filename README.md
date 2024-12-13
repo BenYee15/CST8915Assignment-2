@@ -1,11 +1,19 @@
 # Updated Application Architecure
-![Application Architecture](https://github.com/user-attachments/assets/aa376665-c3d6-418b-b73f-1d017990ec2b)
+
+![Application Architecture](https://github.com/user-attachments/assets/16ee9a86-4e67-4e71-a043-6ae4d6b68b88)
+
 # Application and Architecture Explanation
 The API acts as the entry point and splits between the store-front(customers) and store-admin(employees).
 The store-front sends request to the order-service and product-service, while the store-admin communicates with the makeline-service.
-
+The order-service send the order to order queue (RabbitMQ).
+The product-service provides the products details to the store-front.
+The makeline-service consumes the data from the order queue and updates the MongoDB.
+MongoDB is a shared central database storing all orders and data of the products. It also in contained in a pod with persistent volume to ensure data is retained if the pod is recreated.
+The ai-service is used to create a better user experience by recommending products and generating images for products.
 
 # Deployment Instructions
+
+
 # Table of Microservice Repositories
 | **Service**         | **Repository Link**                       |
 |---------------------|-------------------------------------------| 
@@ -16,3 +24,7 @@ The store-front sends request to the order-service and product-service, while th
 | `makeline-service` | [makeline-service-L8](https://github.com/BenYee15/makeline-service-L8) |
 | `ai-service` | [ai-service-L8](https://github.com/BenYee15/ai-service-L8) |
 | `mongodb` | [mongodb](https://github.com/docker-library/mongo) |
+
+# Docker Images
+
+# Deployment Files 
