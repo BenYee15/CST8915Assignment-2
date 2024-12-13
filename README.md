@@ -1,6 +1,6 @@
 # Updated Application Architecure
+![Application Architecture](https://github.com/user-attachments/assets/ca090f66-4268-470e-898d-4b3b17f1ca39)
 
-![Application Architecture](https://github.com/user-attachments/assets/16ee9a86-4e67-4e71-a043-6ae4d6b68b88)
 
 # Application and Architecture Explanation
 The API acts as the entry point and splits between the store-front(customers) and store-admin(employees).
