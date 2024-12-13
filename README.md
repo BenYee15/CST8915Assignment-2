@@ -69,5 +69,8 @@ kubectl get ingress
 | `mongodb` | [mongodb](https://github.com/docker-library/mongo) |
 
 ## Docker Images
+Unable to create... Please see below
 
-## Deployment Files 
+## ISSUES AND LIMITATIONS
+On December 12th, after creating my Kubernetes clusters, when working on my assignment, I tried to connect to the clusters using Azure CLI on VS Code. Upon login in with credentials, I noticed that the CDO subscription wasn't listed for some reason. I pressed enter and it took me to the Algonquin College subscription by default. On Azure, somehow my subscription had been moved to a tenant, and I lost all access to any subscriptions for Azure. I can't access my Kubernetes cluster and it could still be running and I have no way to stop it from continuing to consume resources. This happened at around 6p.m. I have not been able to create Docker images and Dockerfiles, access my Kubernetes clusters, and I had the GPT-4 and DALL-e-3 AI models deployed, and I'm unsure if they are also still running because I can't access them on the Azure OpenAI service. I am also unable to use the Azure for Students subscription as the free credit has expired and and I can't reactivate it.
+
